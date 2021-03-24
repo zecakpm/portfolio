@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on My blog</title>
+    <link>https://zecakpm.github.io/portfolio/tags/machine-learning/</link>
+    <description>Recent content in machine learning on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Apr 2017 10:58:08 -0400</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Short period classification of The New York Stock Exchange, Nasdaq Stock Market &amp; London Stock Exchange companies</title>
+      <link>https://zecakpm.github.io/portfolio/post/chapter-1/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/chapter-1/</guid>
+      <description>STOCK MARKET Stock market prediction is a challenge for investors and advisers. The analysis of time series using APIs + classification models allow investors to use a wide range of information that could lead to better asset allocation.
+Model To reduce risk exposure we propose a short period classification using the Random Forest model.
+Structure Choose Markets &amp;amp; Companies Selected major companies from NYSE, Nasdaq, and LSE.
+Collect data Used yahoo API to gather company data.</description>
+    </item>
+    
+  </channel>
+</rss>
