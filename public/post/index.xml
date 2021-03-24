@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on My blog</title>
-    <link>https://zecakpm.github.io/post/</link>
+    <link>https://zecakpm.github.io/portfolio/post/</link>
     <description>Recent content in Articles on My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://zecakpm.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MongoDB - Creating, querying and transforming data with Python</title>
-      <link>https://zecakpm.github.io/post/chapter-2/</link>
+      <link>https://zecakpm.github.io/portfolio/post/chapter-2/</link>
       <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
       
-      <guid>https://zecakpm.github.io/post/chapter-2/</guid>
+      <guid>https://zecakpm.github.io/portfolio/post/chapter-2/</guid>
       <description>Image Credits Smith Collection / Gado / Getty Images
 MongoDB MongoDB is a highly scalable database. All info is stored as JSON files, which makes it very fast and scalable.
 Terminology  Collection - name used for tables  Objective I will be exploring how to create, query, and transform data into a Pandas DataFrame in Python.
@@ -22,10 +22,10 @@ Importing libraries and establish a connection with Mongo Server from flask_pymo
     
     <item>
       <title>Short period classification of The New York Stock Exchange, Nasdaq Stock Market &amp; London Stock Exchange companies</title>
-      <link>https://zecakpm.github.io/post/chapter-1/</link>
+      <link>https://zecakpm.github.io/portfolio/post/chapter-1/</link>
       <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
       
-      <guid>https://zecakpm.github.io/post/chapter-1/</guid>
+      <guid>https://zecakpm.github.io/portfolio/post/chapter-1/</guid>
       <description>STOCK MARKET Stock market prediction is a challenge for investors and advisers. The analysis of time series using APIs + classification models allow investors to use a wide range of information that could lead to better asset allocation.
 Model To reduce risk exposure we propose a short period classification using the Random Forest model.
 Structure Choose Markets &amp;amp; Companies Selected major companies from NYSE, Nasdaq, and LSE.

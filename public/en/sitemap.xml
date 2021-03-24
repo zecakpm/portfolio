@@ -2,116 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zecakpm.github.io/</loc>
+    <loc>https://zecakpm.github.io/portfolio/</loc>
     <lastmod>2017-04-10T11:00:59-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://zecakpm.github.io/fr/"
+                href="https://zecakpm.github.io/portfolio/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zecakpm.github.io/"
+                href="https://zecakpm.github.io/portfolio/"
                 />
   </url><url>
-    <loc>https://zecakpm.github.io/post/chapter-2/</loc>
+    <loc>https://zecakpm.github.io/portfolio/post/chapter-2/</loc>
     <lastmod>2017-04-10T11:00:59-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://zecakpm.github.io/tags/data-science/</loc>
+    <loc>https://zecakpm.github.io/portfolio/tags/data-science/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://zecakpm.github.io/tags/machine-learning/</loc>
+    <loc>https://zecakpm.github.io/portfolio/tags/machine-learning/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://zecakpm.github.io/tags/neural-network/</loc>
+    <loc>https://zecakpm.github.io/portfolio/tags/neural-network/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://zecakpm.github.io/post/chapter-1/</loc>
-    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://zecakpm.github.io/fr/post/chapter-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zecakpm.github.io/post/chapter-1/"
-                />
-  </url><url>
-    <loc>https://zecakpm.github.io/tags/</loc>
+    <loc>https://zecakpm.github.io/portfolio/post/chapter-1/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://zecakpm.github.io/fr/tags/"
+                href="https://zecakpm.github.io/portfolio/fr/post/chapter-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zecakpm.github.io/tags/"
+                href="https://zecakpm.github.io/portfolio/post/chapter-1/"
                 />
   </url><url>
-    <loc>https://zecakpm.github.io/post/</loc>
+    <loc>https://zecakpm.github.io/portfolio/tags/</loc>
+    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://zecakpm.github.io/portfolio/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zecakpm.github.io/portfolio/tags/"
+                />
+  </url><url>
+    <loc>https://zecakpm.github.io/portfolio/post/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://zecakpm.github.io/fr/post/"
+                href="https://zecakpm.github.io/portfolio/fr/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zecakpm.github.io/post/"
+                href="https://zecakpm.github.io/portfolio/post/"
                 />
   </url><url>
-    <loc>https://zecakpm.github.io/about/</loc>
+    <loc>https://zecakpm.github.io/portfolio/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://zecakpm.github.io/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://zecakpm.github.io/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zecakpm.github.io/categories/"
-                />
-  </url><url>
-    <loc>https://zecakpm.github.io/contact/</loc>
+    <loc>https://zecakpm.github.io/portfolio/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://zecakpm.github.io/fr/contact/"
+                href="https://zecakpm.github.io/portfolio/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zecakpm.github.io/contact/"
+                href="https://zecakpm.github.io/portfolio/categories/"
+                />
+  </url><url>
+    <loc>https://zecakpm.github.io/portfolio/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://zecakpm.github.io/portfolio/fr/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zecakpm.github.io/portfolio/contact/"
                 />
   </url>
 </urlset>
