@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles, Projects, Books and Productive Tools on Jose Formiga</title>
+    <link>https://zecakpm.github.io/portfolio/</link>
+    <description>Recent content in Articles, Projects, Books and Productive Tools on Jose Formiga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Apr 2017 11:00:59 -0400</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breast Cancer Classification with Naive Bayes</title>
+      <link>https://zecakpm.github.io/portfolio/post/4_mammo_nb/</link>
+      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/4_mammo_nb/</guid>
+      <description>Naive Bayes Classifier For this post I will explore Naive Bayes classifier to predict Breast Cancer. Naive Bayes is a supervised learning algorithm. It has the main premise that each variable will impact the result in an independent manner.
+Understanding the data Find the data for download here &amp;ndash;&amp;gt; Mammographic Mass Data Set
+Columns  BI-RADS assessment: 1 to 5 (ordinal) Age: patient&amp;rsquo;s age in years (integer) Shape: mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal) Margin: mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 5.</description>
+    </item>
+    
+    <item>
+      <title>Data Cleaning and Normalization</title>
+      <link>https://zecakpm.github.io/portfolio/post/3_data_cleaning/</link>
+      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/3_data_cleaning/</guid>
+      <description>Clean weblog access The main aim of this task is to view the top pages of a certain web page and understand how an easy task can turn into a laborious activity. This log data was released on the Udemy Course called &amp;ldquo;Machine Learning, Data Science and Deep Learning with Python&amp;rdquo; by Frank Keane.
+Let’s start!!!
+Organizing weblogs into fields This code will parse an apache access logline in a bunch of fields and then builds up what is called the regular expression.</description>
+    </item>
+    
+    <item>
+      <title>Detecting credit card fraudulent transactions with 99% accuracy</title>
+      <link>https://zecakpm.github.io/portfolio/post/5_credit_card_fraud/</link>
+      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/5_credit_card_fraud/</guid>
+      <description>On this article, I will explore a dataset from credit card transactions and run a regression classifier to predict fraudulent ones.
+I will also cover some technical topics as Principal Component Analysis and Confusion Matrix.
+Info about the dataaaaa This is an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions.
+Only numeric values are present on this dataset, this is due to PCA transformation, to preserve data confidentiality, ran by the data provider.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB - Creating, querying and transforming data with Python</title>
+      <link>https://zecakpm.github.io/portfolio/post/2_mongo_db/</link>
+      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/2_mongo_db/</guid>
+      <description>Image Credits Smith Collection / Gado / Getty Images
+MongoDB MongoDB is a highly scalable database. All info is stored as JSON files, which makes it very fast and scalable.
+Terminology  Collection - name used for tables  Objective I will be exploring how to create, query, and transform data into a Pandas DataFrame in Python.
+With no further delays, let&amp;rsquo;s get our hands dirty.
+Importing libraries and establish a connection with Mongo Server from flask_pymongo import pymongo as pm from pymongo import MongoClient as mc #Establish connection connection = mc(&amp;#39;localhost&amp;#39;,27017) Creating a database If a database does not exist under this name, a new database will be created.</description>
+    </item>
+    
+    <item>
+      <title>Short period classification of The New York Stock Exchange, Nasdaq Stock Market &amp; London Stock Exchange companies</title>
+      <link>https://zecakpm.github.io/portfolio/post/1_stocks_r/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/1_stocks_r/</guid>
+      <description>STOCK MARKET Stock market prediction is a challenge for investors and advisers. The analysis of time series using APIs + classification models allow investors to use a wide range of information that could lead to better asset allocation.
+Model To reduce risk exposure we propose a short period classification using the Random Forest model.
+Structure Choose Markets &amp;amp; Companies Selected major companies from NYSE, Nasdaq, and LSE.
+Collect data Used yahoo API to gather company data.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://zecakpm.github.io/portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/contact/</guid>
+      <description>Follow me on social media platform.
+   Platform URL     LinkedIn: https://www.linkedin.com/in/jformiga/   GitHub: https://github.com/zecakpm    </description>
+    </item>
+    
+  </channel>
+</rss>
