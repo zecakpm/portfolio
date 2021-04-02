@@ -17,7 +17,7 @@
 
   
   
-    <link rel="stylesheet" href="/portfolio/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+    <link rel="stylesheet" href="https://zecakpm.github.io/portfolio/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
   
 
 
@@ -40,7 +40,7 @@
 <meta itemprop="name" content="Breast Cancer Classification with Naive Bayes">
 <meta itemprop="description" content="Pierre Gringoire"><meta itemprop="datePublished" content="2017-04-10T11:00:59-04:00" />
 <meta itemprop="dateModified" content="2017-04-10T11:00:59-04:00" />
-<meta itemprop="wordCount" content="1202">
+<meta itemprop="wordCount" content="491">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Breast Cancer Classification with Naive Bayes"/>
 <meta name="twitter:description" content="Pierre Gringoire"/>
@@ -58,7 +58,7 @@
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="/portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+    <a href="https://zecakpm.github.io/portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
       
         Jose Formiga
       
@@ -70,31 +70,31 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/portfolio/about/" title="About page">
+            <a class="hover-white no-underline white-90" href="https://zecakpm.github.io/portfolio/about/" title="About page">
               About
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/portfolio/post/" title="Articles page">
+            <a class="hover-white no-underline white-90" href="https://zecakpm.github.io/portfolio/post/" title="Articles page">
               Articles
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/portfolio/books/" title="Books page">
+            <a class="hover-white no-underline white-90" href="https://zecakpm.github.io/portfolio/books/" title="Books page">
               Books
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/portfolio/contact/" title="Contact page">
+            <a class="hover-white no-underline white-90" href="https://zecakpm.github.io/portfolio/contact/" title="Contact page">
               Contact
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/portfolio/tools/" title="Tools page">
+            <a class="hover-white no-underline white-90" href="https://zecakpm.github.io/portfolio/tools/" title="Tools page">
               Tools
             </a>
           </li>
@@ -296,169 +296,6 @@ target_pred <span style="color:#f92672">=</span> BernNB<span style="color:#f9267
 </code></pre></div><p>Our results show Multinominal Naive Bayes with an accuracy of 0.75 and Bernoulli Naive Bayes with 0.737.<br>
 Results could refined/tuned to increase the accuracy, also other classifiers could be contrasted with the results found.</p>
 <p><a href="https://blogs.oracle.com/datascience/introduction-to-bayesian-inference">Credits header image</a></p>
-<h3 id="clean-weblog-access">Clean weblog access</h3>
-<p>The main aim of this task is to view the top pages of a certain web page and understand how an easy task can turn into a laborious activity.
-This log data was released on the Udemy Course called &ldquo;Machine Learning, Data Science and Deep Learning with Python&rdquo; by Frank Keane.</p>
-<p>Let’s start!!!</p>
-<h3 id="organizing-weblogs-into-fields">Organizing weblogs into fields</h3>
-<p>This code will parse an apache access logline in a bunch of fields and then builds up what is called the regular expression.
-This will allow us to apply it to each access logline, and group the pieces of data in these different fields</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> re
-
-format_pat<span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(
-    <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;(?P&lt;host&gt;[\d\.]+)\s&#34;</span>
-
-<span style="color:#e6db74">``</span><span style="color:#960050;background-color:#1e0010">`</span> python
-URLCounts <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(data, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> (l<span style="color:#f92672">.</span>rstrip() <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f):
-        match<span style="color:#f92672">=</span> format_pat<span style="color:#f92672">.</span>match(line)
-        <span style="color:#66d9ef">if</span> match:
-            access <span style="color:#f92672">=</span> match<span style="color:#f92672">.</span>groupdict()
-            request <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;request&#39;</span>]
-            fields <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>split()
-            <span style="color:#66d9ef">if</span> (len(fields) <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span>):
-                <span style="color:#66d9ef">print</span>(fields)
-
-</code></pre></div><!-- raw HTML omitted -->
-<p>Let’s update our code to select only fields with 3 components.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">URLCounts <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(data, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> (l<span style="color:#f92672">.</span>rstrip() <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f):
-        match<span style="color:#f92672">=</span> format_pat<span style="color:#f92672">.</span>match(line)
-        <span style="color:#66d9ef">if</span> match:
-            access <span style="color:#f92672">=</span> match<span style="color:#f92672">.</span>groupdict()
-            request <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;request&#39;</span>]
-            fields <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>split()
-            <span style="color:#75715e">#code added to remove blanks and any other field with len different than 3</span>
-            <span style="color:#66d9ef">if</span> (len(fields) <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>):
-                URL <span style="color:#f92672">=</span> fields[<span style="color:#ae81ff">1</span>]
-                <span style="color:#66d9ef">if</span> URL <span style="color:#f92672">in</span> URLCounts:
-                    URLCounts[URL] <span style="color:#f92672">=</span> URLCounts[URL] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-                <span style="color:#66d9ef">else</span>:
-                    URLCounts[URL] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-results <span style="color:#f92672">=</span> sorted(URLCounts, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> i: int(URLCounts[i]), reverse<span style="color:#f92672">=</span>True)
-
-<span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> results[:<span style="color:#ae81ff">20</span>]:
-    <span style="color:#66d9ef">print</span>(result <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> str(URLCounts[result]))
-
-</code></pre></div><!-- raw HTML omitted -->
-<p>The results were narrowed down, but we are not quite there yet.
-To restrict it a bit more let’s set action = &ldquo;GET&rdquo;.
-This means that users &ldquo;getting&rdquo; info from the website.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">URLCounts <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(logPath, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> (l<span style="color:#f92672">.</span>rstrip() <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f):
-        match<span style="color:#f92672">=</span> format_pat<span style="color:#f92672">.</span>match(line)
-        <span style="color:#66d9ef">if</span> match:
-            access <span style="color:#f92672">=</span> match<span style="color:#f92672">.</span>groupdict()
-            request <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;request&#39;</span>]
-            fields <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>split()
-            <span style="color:#66d9ef">if</span> (len(fields) <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>):
-                (action, URL, protocol) <span style="color:#f92672">=</span> fields
-                <span style="color:#66d9ef">if</span> (action <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;GET&#39;</span>):
-                    <span style="color:#66d9ef">if</span> URL <span style="color:#f92672">in</span> URLCounts:
-                        URLCounts[URL] <span style="color:#f92672">=</span> URLCounts[URL] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-                    <span style="color:#66d9ef">else</span>:
-                        URLCounts[URL] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-results <span style="color:#f92672">=</span> sorted(URLCounts, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> i: int(URLCounts[i]), reverse<span style="color:#f92672">=</span>True)
-
-<span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> results[:<span style="color:#ae81ff">20</span>]:
-    <span style="color:#66d9ef">print</span>(result <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> str(URLCounts[result]))
-</code></pre></div><!-- raw HTML omitted -->
-<p>Digging deeper into the results is possible to find &ldquo;blank&rdquo; user agents, meaning that those requests are coming from
-not regular users, or any type of web scrappers.</p>
-<ul>
-<li>selecting most used agent =&ldquo;browser&rdquo;</li>
-<li>check the second result, &ldquo;-: 4035&rdquo;, could be a scrapping tool</li>
-<li>baiduspider, googlebot and yandexbot are webcrawlers</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-UserAgents <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(logPath, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> (l<span style="color:#f92672">.</span>rstrip() <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f):
-        match<span style="color:#f92672">=</span> format_pat<span style="color:#f92672">.</span>match(line)
-        <span style="color:#66d9ef">if</span> match:
-            access <span style="color:#f92672">=</span> match<span style="color:#f92672">.</span>groupdict()
-            agent <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;user_agent&#39;</span>]
-            <span style="color:#66d9ef">if</span> agent <span style="color:#f92672">in</span> UserAgents:
-                UserAgents[agent] <span style="color:#f92672">=</span> UserAgents[agent] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-            <span style="color:#66d9ef">else</span>:
-                UserAgents[agent] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-results <span style="color:#f92672">=</span> sorted(UserAgents, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> i: int(UserAgents[i]), reverse<span style="color:#f92672">=</span>True)
-
-<span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> results:
-    <span style="color:#66d9ef">print</span>(result <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> str(UserAgents[result]))
-
-</code></pre></div><!-- raw HTML omitted -->
-<p>There still agents that do not look right, so let’s add few more filters. Let’s remove agents that have the following words
-bots,Bots,spider,Spider, and &ldquo;-&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-URLCounts <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(logPath, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> (l<span style="color:#f92672">.</span>rstrip() <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f):
-        match<span style="color:#f92672">=</span> format_pat<span style="color:#f92672">.</span>match(line)
-        <span style="color:#66d9ef">if</span> match:
-            access <span style="color:#f92672">=</span> match<span style="color:#f92672">.</span>groupdict()
-            <span style="color:#75715e">#restricting the user agent that does not have the following words</span>
-            <span style="color:#75715e">#W3 total cache is the website owner cache </span>
-            agent <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;user_agent&#39;</span>]
-            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">not</span>(<span style="color:#e6db74">&#39;bot&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> <span style="color:#e6db74">&#39;spider&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> 
-                    <span style="color:#e6db74">&#39;Bot&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> <span style="color:#e6db74">&#39;Spider&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span>
-                    <span style="color:#e6db74">&#39;W3 Total Cache&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> agent <span style="color:#f92672">==</span><span style="color:#e6db74">&#39;-&#39;</span>)):
-                request <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;request&#39;</span>]
-                fields <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>split()
-                <span style="color:#66d9ef">if</span> (len(fields) <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>):
-                    (action, URL, protocol) <span style="color:#f92672">=</span> fields
-                    <span style="color:#66d9ef">if</span> (action <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;GET&#39;</span>):
-                        <span style="color:#66d9ef">if</span> URL <span style="color:#f92672">in</span> URLCounts:
-                            URLCounts[URL] <span style="color:#f92672">=</span> URLCounts[URL] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-                        <span style="color:#66d9ef">else</span>:
-                            URLCounts[URL] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-results <span style="color:#f92672">=</span> sorted(URLCounts, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> i: int(URLCounts[i]), reverse<span style="color:#f92672">=</span>True)
-
-<span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> results[:<span style="color:#ae81ff">20</span>]:
-    <span style="color:#66d9ef">print</span>(result <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> str(URLCounts[result]))
-
-</code></pre></div><!-- raw HTML omitted -->
-<p>Almost there, finally the last approach. So the next action is to filter only for URLs ending in &ldquo;/&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">URLCounts <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(logPath, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> f:
-    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> (l<span style="color:#f92672">.</span>rstrip() <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f):
-        match<span style="color:#f92672">=</span> format_pat<span style="color:#f92672">.</span>match(line)
-        <span style="color:#66d9ef">if</span> match:
-            access <span style="color:#f92672">=</span> match<span style="color:#f92672">.</span>groupdict()
-            agent <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;user_agent&#39;</span>]
-            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">not</span>(<span style="color:#e6db74">&#39;bot&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> <span style="color:#e6db74">&#39;spider&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> 
-                    <span style="color:#e6db74">&#39;Bot&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> <span style="color:#e6db74">&#39;Spider&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span>
-                    <span style="color:#e6db74">&#39;W3 Total Cache&#39;</span> <span style="color:#f92672">in</span> agent <span style="color:#f92672">or</span> agent <span style="color:#f92672">==</span><span style="color:#e6db74">&#39;-&#39;</span>)):
-                request <span style="color:#f92672">=</span> access[<span style="color:#e6db74">&#39;request&#39;</span>]
-                fields <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>split()
-                <span style="color:#66d9ef">if</span> (len(fields) <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>):
-                    (action, URL, protocol) <span style="color:#f92672">=</span> fields
-                    <span style="color:#66d9ef">if</span> (URL<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;/&#34;</span>)):
-                        <span style="color:#66d9ef">if</span> (action <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;GET&#39;</span>):
-                            <span style="color:#66d9ef">if</span> URL <span style="color:#f92672">in</span> URLCounts:
-                                URLCounts[URL] <span style="color:#f92672">=</span> URLCounts[URL] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-                            <span style="color:#66d9ef">else</span>:
-                                URLCounts[URL] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-
-results <span style="color:#f92672">=</span> sorted(URLCounts, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> i: int(URLCounts[i]), reverse<span style="color:#f92672">=</span>True)
-
-<span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> results[:<span style="color:#ae81ff">20</span>]:
-    <span style="color:#66d9ef">print</span>(result <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> str(URLCounts[result]))
-
-</code></pre></div><!-- raw HTML omitted -->
 <ul class="pa0">
   
 </ul>
