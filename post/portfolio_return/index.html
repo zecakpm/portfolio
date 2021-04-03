@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Breast Cancer Classification with Naive Bayes | Jose Formiga</title>
+    <title>Calculating index and stock returns using Python and Google Collab | Jose Formiga</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Pierre Gringoire">
+    <meta name="description" content="Here I want to explore how to calculate index and stock returns on Python.
+Info about the data All the data is gathered using Yahoo API using a library called yfinance.
+Google Colab All the code was run on a google colab, a WEB IDE, and no need for local machine downloads either for the IDE or data.
+Now let’s explore the code. Simple and Accurate ; )
+Libraries !pip install yfinance --upgrade --no-cache-dir import pandas as pd import yfinance as yf import matplotlib.">
     <meta name="generator" content="Hugo 0.82.0" />
     
     
@@ -30,20 +34,32 @@
 
     
     
-    <meta property="og:title" content="Breast Cancer Classification with Naive Bayes" />
-<meta property="og:description" content="Pierre Gringoire" />
+    <meta property="og:title" content="Calculating index and stock returns using Python and Google Collab" />
+<meta property="og:description" content="Here I want to explore how to calculate index and stock returns on Python.
+Info about the data All the data is gathered using Yahoo API using a library called yfinance.
+Google Colab All the code was run on a google colab, a WEB IDE, and no need for local machine downloads either for the IDE or data.
+Now let’s explore the code. Simple and Accurate ; )
+Libraries !pip install yfinance --upgrade --no-cache-dir import pandas as pd import yfinance as yf import matplotlib." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zecakpm.github.io/portfolio/post/4_mammo_nb/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-10-10T11:00:59-04:00" />
-<meta property="article:modified_time" content="2020-10-10T11:00:59-04:00" /><meta property="og:site_name" content="Jose Formiga" />
+<meta property="og:url" content="https://zecakpm.github.io/portfolio/post/portfolio_return/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-04-03T11:00:59-04:00" />
+<meta property="article:modified_time" content="2021-04-03T11:00:59-04:00" /><meta property="og:site_name" content="Jose Formiga" />
 
-<meta itemprop="name" content="Breast Cancer Classification with Naive Bayes">
-<meta itemprop="description" content="Pierre Gringoire"><meta itemprop="datePublished" content="2020-10-10T11:00:59-04:00" />
-<meta itemprop="dateModified" content="2020-10-10T11:00:59-04:00" />
-<meta itemprop="wordCount" content="491">
+<meta itemprop="name" content="Calculating index and stock returns using Python and Google Collab">
+<meta itemprop="description" content="Here I want to explore how to calculate index and stock returns on Python.
+Info about the data All the data is gathered using Yahoo API using a library called yfinance.
+Google Colab All the code was run on a google colab, a WEB IDE, and no need for local machine downloads either for the IDE or data.
+Now let’s explore the code. Simple and Accurate ; )
+Libraries !pip install yfinance --upgrade --no-cache-dir import pandas as pd import yfinance as yf import matplotlib."><meta itemprop="datePublished" content="2021-04-03T11:00:59-04:00" />
+<meta itemprop="dateModified" content="2021-04-03T11:00:59-04:00" />
+<meta itemprop="wordCount" content="199">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Breast Cancer Classification with Naive Bayes"/>
-<meta name="twitter:description" content="Pierre Gringoire"/>
+<meta name="twitter:title" content="Calculating index and stock returns using Python and Google Collab"/>
+<meta name="twitter:description" content="Here I want to explore how to calculate index and stock returns on Python.
+Info about the data All the data is gathered using Yahoo API using a library called yfinance.
+Google Colab All the code was run on a google colab, a WEB IDE, and no need for local machine downloads either for the IDE or data.
+Now let’s explore the code. Simple and Accurate ; )
+Libraries !pip install yfinance --upgrade --no-cache-dir import pandas as pd import yfinance as yf import matplotlib."/>
 
 	
   </head>
@@ -54,8 +70,10 @@
    
   
 
-  <header>
-    <div class="bg-black">
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://zecakpm.github.io/portfolio/images/returns/header.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://zecakpm.github.io/portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -141,6 +159,12 @@
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Calculating index and stock returns using Python and Google Collab</h1>
+          
+        
+      </div>
     </div>
   </header>
 
@@ -163,20 +187,20 @@
   <div id="sharing" class="mt3">
 
     
-    <a href="https://www.facebook.com/sharer.php?u=https://zecakpm.github.io/portfolio/post/4_mammo_nb/" class="facebook no-underline" aria-label="share on Facebook">
+    <a href="https://www.facebook.com/sharer.php?u=https://zecakpm.github.io/portfolio/post/portfolio_return/" class="facebook no-underline" aria-label="share on Facebook">
       <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
 
     </a>
 
     
     
-    <a href="https://twitter.com/share?url=https://zecakpm.github.io/portfolio/post/4_mammo_nb/&amp;text=Breast%20Cancer%20Classification%20with%20Naive%20Bayes" class="twitter no-underline" aria-label="share on Twitter">
+    <a href="https://twitter.com/share?url=https://zecakpm.github.io/portfolio/post/portfolio_return/&amp;text=Calculating%20index%20and%20stock%20returns%20using%20Python%20and%20Google%20Collab" class="twitter no-underline" aria-label="share on Twitter">
       <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
     </a>
 
     
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://zecakpm.github.io/portfolio/post/4_mammo_nb/&amp;title=Breast%20Cancer%20Classification%20with%20Naive%20Bayes" class="linkedin no-underline" aria-label="share on LinkedIn">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://zecakpm.github.io/portfolio/post/portfolio_return/&amp;title=Calculating%20index%20and%20stock%20returns%20using%20Python%20and%20Google%20Collab" class="linkedin no-underline" aria-label="share on LinkedIn">
       <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
@@ -185,117 +209,82 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Breast Cancer Classification with Naive Bayes</h1>
+      <h1 class="f1 athelas mt3 mb1">Calculating index and stock returns using Python and Google Collab</h1>
       
       
-      <time class="f6 mv4 dib tracked" datetime="2020-10-10T11:00:59-04:00">October 10, 2020</time>
+      <time class="f6 mv4 dib tracked" datetime="2021-04-03T11:00:59-04:00">April 3, 2021</time>
 
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="naive-bayes-classifier">Naive Bayes Classifier</h2>
-<p>For this post I will explore Naive Bayes classifier to predict Breast Cancer.
-Naive Bayes is a supervised learning algorithm. It has the main premise that each variable will impact the result in an independent manner.</p>
-<h2 id="understanding-the-data">Understanding the data</h2>
-<p>Find the data for download here &ndash;&gt; <a href="https://archive.ics.uci.edu/ml/datasets/Mammographic+Mass">Mammographic Mass Data Set</a></p>
-<h1 id="columns">Columns</h1>
-<ol>
-<li>BI-RADS assessment: 1 to 5 (ordinal)</li>
-<li>Age: patient&rsquo;s age in years (integer)</li>
-<li>Shape: mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal)</li>
-<li>Margin: mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 5. spiculated=5 (nominal)</li>
-<li>Density: mass density high=1 iso=2 low=3 fat-containing=4 (ordinal)</li>
-<li>Severity: benign=0 or malignant=1 (binominal)</li>
-</ol>
-<p>BI-RADS will be discarded as is an assessment of serivity, predict variable of our project.</p>
-<h2 id="loading-libraries-and-data">Loading libraries and data</h2>
-<p>First select all libraries.<br>
-Also at this stage renamed the columns using the data documentation.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-<span style="color:#f92672">import</span> urllib
-<span style="color:#f92672">import</span> sklearn
-<span style="color:#f92672">from</span> sklearn.naive_bayes <span style="color:#f92672">import</span> MultinomialNB
-<span style="color:#f92672">from</span> sklearn.naive_bayes <span style="color:#f92672">import</span> BernoulliNB
-<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Here I want to explore how to calculate index and stock returns on Python.</p>
+<h3 id="info-about-the-data">Info about the data</h3>
+<p>All the data is gathered using Yahoo API using a library called yfinance.</p>
+<h3 id="google-colab">Google Colab</h3>
+<p>All the code was run on a google colab, a WEB IDE, and no need for local machine downloads either for the IDE or data.</p>
+<p>Now let’s explore the code. Simple and Accurate ; )</p>
+<h3 id="libraries">Libraries</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#960050;background-color:#1e0010">!</span>pip install yfinance <span style="color:#f92672">--</span>upgrade <span style="color:#f92672">--</span>no<span style="color:#f92672">-</span>cache<span style="color:#f92672">-</span>dir
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">import</span> yfinance <span style="color:#f92672">as</span> yf
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
 
-<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
-<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> accuracy_score
-
-
-input_file <span style="color:#f92672">=</span><span style="color:#e6db74">&#39;mammographic_masses.data.txt&#39;</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(input_file)
-df<span style="color:#f92672">.</span>columns <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;BI-RADS&#39;</span>,<span style="color:#e6db74">&#39;age&#39;</span>,<span style="color:#e6db74">&#39;shape&#39;</span>,<span style="color:#e6db74">&#39;margin&#39;</span>,<span style="color:#e6db74">&#39;density&#39;</span>,<span style="color:#e6db74">&#39;severity&#39;</span>]
-
-</code></pre></div><h2 id="visualising-cleaning-and-transforming-the-data">Visualising, cleaning, and transforming the data</h2>
-<p>Evaluating the data set is easy to spot some missing values presented by &ldquo;?&rdquo; sign.<br>
-The evaluation has to be made at this point for outliers, the function min_max will select min and max values for each column, then we will be able to compare it with the values on the documentation.</p>
-<!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#remove missing values</span>
-df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;?&#39;</span>,np<span style="color:#f92672">.</span>nan)
-df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna()
-
-<span style="color:#75715e">#checking for outliers</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">min_max</span> (df):
-    min_col <span style="color:#f92672">=</span> {}
-    max_col <span style="color:#f92672">=</span> {}
-    
-    <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> df:
-        max_col[col] <span style="color:#f92672">=</span> df[col]<span style="color:#f92672">.</span>max()
-        min_col[col] <span style="color:#f92672">=</span> df[col]<span style="color:#f92672">.</span>min()
-        
-    result <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame([min_col,max_col])
-    <span style="color:#66d9ef">return</span> result
-min_max(df)
-
-</code></pre></div><!-- raw HTML omitted -->
-<p>Also lets check if all the columns are integers, this will turn out to be essencial to run the NB classifier later on.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#checking types</span>
-df<span style="color:#f92672">.</span>dtypes
-
-<span style="color:#75715e">#tranforming all columns to integer</span>
-df<span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>astype(str)<span style="color:#f92672">.</span>astype(int) 
-
-</code></pre></div><h2 id="before">Before</h2>
-<!-- raw HTML omitted -->
-<h2 id="selecting-and-splitting-the-data">Selecting and Splitting the data</h2>
-<p>The severity column its the aim of our prediction (target), so lets remove it from the others. On the other side will be the remaining columns (features &ndash;&gt;  (age,shape,margin,density).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">features_col <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;age&#39;</span>, <span style="color:#e6db74">&#39;shape&#39;</span>, <span style="color:#e6db74">&#39;margin&#39;</span>, <span style="color:#e6db74">&#39;density&#39;</span>]
-features <span style="color:#f92672">=</span> df[features_col]
-target <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;severity&#39;</span>]]
-
-<span style="color:#75715e">#splitting the data</span>
-<span style="color:#75715e">#test ==&gt; 20%</span>
-<span style="color:#75715e">#random state ==&gt; 17, random number to control the suffle applied to the data before spliting</span>
-features_train, features_test, target_train, target_test <span style="color:#f92672">=</span> train_test_split(features,target,test_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>, random_state <span style="color:#f92672">=</span><span style="color:#ae81ff">17</span>)
-</code></pre></div><h2 id="validating-classifiers">Validating classifiers</h2>
-<p>This section will be divided into 2 parts, first using Bernoulli Naive Bayes,and second Multinominal Naive Bayes.</p>
+</code></pre></div><h3 id="importing-data">Importing data</h3>
+<p>Gathering data from the Yahoo API.</p>
 <ul>
-<li>Train both models with 80% of the data</li>
-<li>Test the models with 20% of the data</li>
-<li>Compare the accuracy values of each of the model variants</li>
+<li>Select the tickers</li>
+<li>Select period</li>
+<li>Create an empty pandas data frame to collect only adjusted closing prices</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#Multinominal Naive Bayes</span>
-MultiNB <span style="color:#f92672">=</span> MultinomialNB()
-MultiNB<span style="color:#f92672">.</span>fit(features_train,target_train)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tickers <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;HSBA.L&#39;</span>,<span style="color:#e6db74">&#39;GOOG&#39;</span>,<span style="color:#e6db74">&#39;^GSPC&#39;</span>,<span style="color:#e6db74">&#39;^DJI&#39;</span>]
+start <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2020-01-01&#39;</span>
+end <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2021-03-31&#39;</span>
+cl_price <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame()
 
-target_expect <span style="color:#f92672">=</span> target_test
-target_pred <span style="color:#f92672">=</span> MultiNB<span style="color:#f92672">.</span>predict(features_test)
-<span style="color:#66d9ef">print</span>(accuracy_score(target_expect,target_pred))
+<span style="color:#66d9ef">for</span> t <span style="color:#f92672">in</span> tickers:
+  cl_price[t] <span style="color:#f92672">=</span> yf<span style="color:#f92672">.</span>download(t,start,end)[<span style="color:#e6db74">&#39;Adj Close&#39;</span>] 
+</code></pre></div><h3 id="checking-and-normalizing-the-data">Checking and normalizing the data</h3>
+<ul>
+<li>Run a quick check on the first 5 rows</li>
+<li>As values have different scales, let&rsquo;s bring it to the same base</li>
+<li>Plot normalized values over time</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cl_price<span style="color:#f92672">.</span>head()
+(cl_price<span style="color:#f92672">/</span>cl_price<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span>)<span style="color:#f92672">.</span>plot(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">6</span>));
+plt<span style="color:#f92672">.</span>show()
+</code></pre></div><ul>
+<li>Index and stock performance over time
+<figure>
+    <img src="https://zecakpm.github.io/portfolio/images/returns/1.png"/> 
+</figure>
+</li>
+</ul>
+<h3 id="calculating-daily-and-year-returns">Calculating daily and year returns</h3>
+<ul>
+<li>Average trading days per year = 250</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">index_return <span style="color:#f92672">=</span> (cl_price <span style="color:#f92672">/</span> cl_price<span style="color:#f92672">.</span>shift(<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+index_return<span style="color:#f92672">.</span>tail()
 
+annual_index_return <span style="color:#f92672">=</span> index_return<span style="color:#f92672">.</span>mean()<span style="color:#f92672">*</span><span style="color:#ae81ff">250</span>
+annual_index_return 
 
-<span style="color:#75715e">#Bernoulli Naive Bayes</span>
-BernNB <span style="color:#f92672">=</span> BernoulliNB(binarize <span style="color:#f92672">=</span> True)
-BernNB<span style="color:#f92672">.</span>fit(features_train,target_train)
-<span style="color:#66d9ef">print</span>(BernNB)
-
-target_expect <span style="color:#f92672">=</span> target_test
-target_pred <span style="color:#f92672">=</span> BernNB<span style="color:#f92672">.</span>predict(features_test)
-<span style="color:#66d9ef">print</span>(accuracy_score(target_expect,target_pred))
-
-</code></pre></div><p>Our results show Multinominal Naive Bayes with an accuracy of 0.75 and Bernoulli Naive Bayes with 0.737.<br>
-Results could refined/tuned to increase the accuracy, also other classifiers could be contrasted with the results found.</p>
-<p><a href="https://blogs.oracle.com/datascience/introduction-to-bayesian-inference">Credits header image</a></p>
+</code></pre></div><ul>
+<li>
+<p>Daily returns
+<figure>
+    <img src="https://zecakpm.github.io/portfolio/images/returns/2.png"/> 
+</figure>
+</p>
+</li>
+<li>
+<p>Year returns
+<figure>
+    <img src="https://zecakpm.github.io/portfolio/images/returns/3.png"/> 
+</figure>
+</p>
+</li>
+</ul>
 <ul class="pa0">
   
 </ul>

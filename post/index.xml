@@ -8,20 +8,22 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Breast Cancer Classification with Naive Bayes</title>
-      <link>https://zecakpm.github.io/portfolio/post/4_mammo_nb/</link>
-      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      <title>Calculating index and stock returns using Python and Google Collab</title>
+      <link>https://zecakpm.github.io/portfolio/post/portfolio_return/</link>
+      <pubDate>Sat, 03 Apr 2021 11:00:59 -0400</pubDate>
       
-      <guid>https://zecakpm.github.io/portfolio/post/4_mammo_nb/</guid>
-      <description>Naive Bayes Classifier For this post I will explore Naive Bayes classifier to predict Breast Cancer. Naive Bayes is a supervised learning algorithm. It has the main premise that each variable will impact the result in an independent manner.
-Understanding the data Find the data for download here &amp;ndash;&amp;gt; Mammographic Mass Data Set
-Columns  BI-RADS assessment: 1 to 5 (ordinal) Age: patient&amp;rsquo;s age in years (integer) Shape: mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal) Margin: mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 5.</description>
+      <guid>https://zecakpm.github.io/portfolio/post/portfolio_return/</guid>
+      <description>Here I want to explore how to calculate index and stock returns on Python.
+Info about the data All the data is gathered using Yahoo API using a library called yfinance.
+Google Colab All the code was run on a google colab, a WEB IDE, and no need for local machine downloads either for the IDE or data.
+Now let’s explore the code. Simple and Accurate ; )
+Libraries !pip install yfinance --upgrade --no-cache-dir import pandas as pd import yfinance as yf import matplotlib.</description>
     </item>
     
     <item>
       <title>Data Cleaning and Normalization</title>
       <link>https://zecakpm.github.io/portfolio/post/3_data_cleaning/</link>
-      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      <pubDate>Tue, 10 Nov 2020 11:00:59 -0400</pubDate>
       
       <guid>https://zecakpm.github.io/portfolio/post/3_data_cleaning/</guid>
       <description>Clean weblog access The main aim of this task is to view the top pages of a certain web page and understand how an easy task can turn into a laborious activity. This log data was released on the Udemy Course called &amp;ldquo;Machine Learning, Data Science and Deep Learning with Python&amp;rdquo; by Frank Keane.
@@ -30,21 +32,20 @@ Organizing weblogs into fields This code will parse an apache access logline in 
     </item>
     
     <item>
-      <title>Detecting credit card fraudulent transactions with 99% accuracy</title>
-      <link>https://zecakpm.github.io/portfolio/post/5_credit_card_fraud/</link>
-      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      <title>Breast Cancer Classification with Naive Bayes</title>
+      <link>https://zecakpm.github.io/portfolio/post/4_mammo_nb/</link>
+      <pubDate>Sat, 10 Oct 2020 11:00:59 -0400</pubDate>
       
-      <guid>https://zecakpm.github.io/portfolio/post/5_credit_card_fraud/</guid>
-      <description>On this article, I will explore a dataset from credit card transactions and run a regression classifier to predict fraudulent ones.
-I will also cover some technical topics as Principal Component Analysis and Confusion Matrix.
-Info about the dataaaaa This is an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions.
-Only numeric values are present on this dataset, this is due to PCA transformation, to preserve data confidentiality, ran by the data provider.</description>
+      <guid>https://zecakpm.github.io/portfolio/post/4_mammo_nb/</guid>
+      <description>Naive Bayes Classifier For this post I will explore Naive Bayes classifier to predict Breast Cancer. Naive Bayes is a supervised learning algorithm. It has the main premise that each variable will impact the result in an independent manner.
+Understanding the data Find the data for download here &amp;ndash;&amp;gt; Mammographic Mass Data Set
+Columns  BI-RADS assessment: 1 to 5 (ordinal) Age: patient&amp;rsquo;s age in years (integer) Shape: mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal) Margin: mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 5.</description>
     </item>
     
     <item>
       <title>MongoDB - Creating, querying and transforming data with Python</title>
       <link>https://zecakpm.github.io/portfolio/post/2_mongo_db/</link>
-      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      <pubDate>Thu, 10 Sep 2020 11:00:59 -0400</pubDate>
       
       <guid>https://zecakpm.github.io/portfolio/post/2_mongo_db/</guid>
       <description>Image Credits Smith Collection / Gado / Getty Images
@@ -57,13 +58,25 @@ Importing libraries and establish a connection with Mongo Server from flask_pymo
     <item>
       <title>Short period classification of The New York Stock Exchange, Nasdaq Stock Market &amp; London Stock Exchange companies</title>
       <link>https://zecakpm.github.io/portfolio/post/1_stocks_r/</link>
-      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      <pubDate>Sun, 09 Aug 2020 10:58:08 -0400</pubDate>
       
       <guid>https://zecakpm.github.io/portfolio/post/1_stocks_r/</guid>
       <description>STOCK MARKET Stock market prediction is a challenge for investors and advisers. The analysis of time series using APIs + classification models allow investors to use a wide range of information that could lead to better asset allocation.
 Model To reduce risk exposure we propose a short period classification using the Random Forest model.
 Structure Choose Markets &amp;amp; Companies Selected major companies from NYSE, Nasdaq, and LSE.
 Collect data Used yahoo API to gather company data.</description>
+    </item>
+    
+    <item>
+      <title>Detecting credit card fraudulent transactions with 99% accuracy</title>
+      <link>https://zecakpm.github.io/portfolio/post/5_credit_card_fraud/</link>
+      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/5_credit_card_fraud/</guid>
+      <description>On this article, I will explore a dataset from credit card transactions and run a regression classifier to predict fraudulent ones.
+I will also cover some technical topics as Principal Component Analysis and Confusion Matrix.
+Info about the dataaaaa This is an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions.
+Only numeric values are present on this dataset, this is due to PCA transformation, to preserve data confidentiality, ran by the data provider.</description>
     </item>
     
   </channel>
