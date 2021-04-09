@@ -6,9 +6,21 @@
     <description>Recent content in Articles, Projects, Books and Productive Tools on Jose Formiga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 11:00:59 -0400</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Apr 2021 11:00:59 -0400</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Calculating index and stock returns using Python and Google Collab</title>
+      <title>Predicting monthly transactions with BigQuery ML</title>
+      <link>https://zecakpm.github.io/portfolio/post/bigquery_ml/</link>
+      <pubDate>Thu, 08 Apr 2021 11:00:59 -0400</pubDate>
+      
+      <guid>https://zecakpm.github.io/portfolio/post/bigquery_ml/</guid>
+      <description>Let&amp;rsquo;s take a look on how to deploy a Machine Learning (ML) model without leaving your database. That means deploying your model using only SQL. Pretty amazing isn&amp;rsquo;t it?
+Here a few models we are able to implement using BigQuery ML.
+ Linear regression Binary logistic regression Multiclass logistic regression  Objective Predict number of transactions using the following features: Operating System, Country and Page Views
+Preparing the data For this example I will use a public data set on BigQuery.</description>
+    </item>
+    
+    <item>
+      <title>Calculating index and stock returns using Python and Google Colab</title>
       <link>https://zecakpm.github.io/portfolio/post/portfolio_return/</link>
       <pubDate>Sat, 03 Apr 2021 11:00:59 -0400</pubDate>
       
