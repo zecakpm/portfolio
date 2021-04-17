@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 16 Apr 2021 11:00:59 -0400</lastBuildDate><atom:link href="https://zecakpm.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tracking volume of your preferred  stocks</title>
-      <link>https://zecakpm.github.io/portfolio/post/7_volume_stocks/</link>
+      <link>https://zecakpm.github.io/portfolio/post/7_vol_stocks/</link>
       <pubDate>Fri, 16 Apr 2021 11:00:59 -0400</pubDate>
       
-      <guid>https://zecakpm.github.io/portfolio/post/7_volume_stocks/</guid>
+      <guid>https://zecakpm.github.io/portfolio/post/7_vol_stocks/</guid>
       <description>On this notebook let&amp;rsquo;s check volume of trades for a given list of stocks symbols. Ticker == Stock symbol, or the symbol they are traded under at the stock exchange. This is another tool on the toolbox while defining your trading strategy.
 Info about the data All the data is gathered a library called yfinance for historical data from Yahoo! Finance.
 Google Colab So far I think this is the easiest way to run python codes in a &amp;ldquo;research environment&amp;rdquo;.</description>
